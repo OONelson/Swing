@@ -1,0 +1,63 @@
+//SECONDARY-COLORS
+
+//TETIARY-COLORS
+
+:root {
+  --primary-color1: #faf877;
+  --primary-color2: #e9e908;
+  --primary-color3: #ecca06f3;
+
+  --grey-light1: #faf9f9;
+  --grey-light2: #f4f2f2;
+  --grey-light3: #f0eeee;
+  --grey-light4: #ccc;
+
+  --grey-dark1: #333;
+  --grey-dark2: #777;
+  --grey-dark3: #999;
+
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+$breakpoint-largest: 75em; //1200px
+$breakpoint-large: 68.75em; //1100px
+$breakpoint-medium: 50em; //800px
+$breakpoint-medium-small: 43.75em; //700px
+$breakpoint-small: 34.375em; //550px
+$breakpoint-smaller: 30.625em; //490px
+$breakpoint-smallest: 22.5em; //360px
+$breakpoint-mostsmallest: 20em; //320px
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--grey-dark2);
+  background-image: linear-gradient(
+    to right bottom,
+    var(--primary-color1),
+    var(--primary-color3)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 210vh;
+
+  @media only screen and (max-width: $breakpoint-large) {
+    font-size: 50%;
+    height: 100%;
+  }
+  @media only screen and (max-width: $breakpoint-largest) {
+    height: 100%;
+  }
+  @media only screen and (max-width:$breakpoint-smallest){
+    font-size: 40%;
+  }
+}

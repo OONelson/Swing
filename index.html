@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+sans:300,400,600">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Swing | The all in one buying and booking app</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="header">
+                <div class="logo">
+                    <h1>Swing</h1>
+                </div>
+                <form action="#">
+                    <input type="text" list="tags" class="search__input" placeholder="Search homes">
+                    <datalist class="tags" id="tags">
+                        <option value="Atlanta home" class="tags__option"></option>
+                        <option value="Austin home" class="tags__option"></option>
+                        <option value="brookyln home" class="tags__option"></option>
+                        <option value="boston home" class="tags__option"></option>
+                        <option value="California home" class="tags__option"></option>
+                        <option value="Dallas home" class="tags__option"></option>
+                        <option value="Huston home" class="tags__option"></option>
+                        <option value="North Carolina" class="tags__option"></option>
+                        <option value="Portland home" class="tags__option"></option>
+
+                    </datalist>
+                    <button type="search" class="search__button" value="srch">
+                        <svg class="search__icon">
+                            <use xlink:href="images/sprite.svg#icon-magnifying-glass"> </use>
+                        </svg>
+                    </button>
+                </form>
+
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="images/sprite.svg#icon-bookmark"> </use>
+                        </svg> <span class="user-nav__notification">3</span>
+                    </div>
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="images/sprite.svg#icon-chat"> </use>
+                        </svg>
+                        <span class=" user-nav__notification"> 4 </span>
+                    </div>
+                    <div class="user-nav__user">
+                        <img src="images/profile.jpeg" alt="user-photo" class="user-nav__photo">
+                        <span class="user-nav__user-name">Nelson</span>
+                    </div>
+                </nav>
+            </header>
+            <div class="content">
+                <nav class="navigation">
+                    <ul class="side-nav">
+                        <li class="side-nav__item side-nav__item--on">
+                            <a href="#" class="side-nav__link"><svg class="side-nav__icon">
+                                    <use xlink:href=" images/sprite.svg#icon-home"> </use>
+                                </svg>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link"><svg class="side-nav__icon">
+                                    <use xlink:href=" images/sprite.svg#icon-credit-card"></use>
+                                </svg>
+                                <span>Hotel</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link"><svg class="side-nav__icon">
+                                    <use xlink:href=" images/sprite.svg#icon-key"></use>
+                                </svg>
+                                <span>Car</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link"><svg class="side-nav__icon">
+                                    <use xlink:href=" images/sprite.svg#icon-aircraft-take-off"></use>
+                                </svg>
+                                <span>Flight</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="copyrights">
+                        &copy; 2023 by Swing. All rights reserved.
+                    </div>
+                </nav>
+                <main class="home">
+                    <div class="gallery">
+                        <figure class="gallery__image">
+                            <img src="images/apartment1.jpg" alt="first photo of a hotel"
+                                class="gallery__photo gallery__photo--p1">
+                        </figure>
+                        <figure class="gallery__image">
+                            <img src="images/home1.jpg" alt="second photo of a hotel"
+                                class="gallery__photo gallery__photo--p2">
+                        </figure>
+                        <figure class="gallery__image">
+                            <img src="images/home2.jpg" alt="third photo of a hotel"
+                                class="gallery__photo gallery__photo--p3">
+                        </figure>
+                    </div>
+                    <div class="overview">
+                        <h1 class="overview__heading">
+                            beverly homes
+                        </h1>
+                        <div class="overview__star">
+                            <svg class="overview__icon-star">
+                                <use xlink:href=" images/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href=" images/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href=" images/sprite.svg#icon-star"></use>
+                            </svg>
+                        </div>
+                        <div class="overview__location">
+                            <svg class="overview__icon-location">
+                                <use xlink:href=" images/sprite.svg#icon-location-pin"></use>
+                            </svg>
+                            <button class="btn-inline">Beverly Hills, USA</button>
+                        </div>
+                        <div class="overview__rating">
+                            <div class="overview__rating-average">5.7</div>
+                            <div class="overview__rating-count">576 ratings</div>
+                        </div>
+                    </div>
+
+                    <div class="detail">
+                        <div class="description">
+                            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+                                laboriosam ratione non placeat natus debitis nostrum dicta consectetur sint? Rem illo
+                                minima modi eaque consequuntur!</p>
+                            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, odit
+                                quaerat? Quibusdam, dolores suscipit. Debitis.</p>
+                            <ul class="list">
+                                <li class="list__item">Nice top view</li>
+                                <li class="list__item">24hr electricity</li>
+                                <li class="list__item">Top notch security</li>
+                                <li class="list__item">Exclusive designs</li>
+                                <li class="list__item">Wide garage</li>
+                                <li class="list__item">Automated home</li>
+                                <li class="list__item">Spacious rooms</li>
+                                <li class="list__item">Bullet proof doors</li>
+                            </ul>
+                            <div class="recommend">
+                                <p class="recommend__count">Joe and 3 others recommended this app.</p>
+                                <div class="recommend__friends">
+                                    <img src="images/image-daniel.jpg" alt="photo of friends 1"
+                                        class="recommend__photo">
+                                    <img src="images/image-jeanette.jpg" alt="photo of friends 2"
+                                        class="recommend__photo">
+                                    <img src="images/image-jonathan.jpg" alt="photo of friends 3"
+                                        class="recommend__photo">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="user-review">
+                            <figure class="review">
+                                <blockquote class="review__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quasi accusantium
+                                    nulla. Beatae, repellat dolorum.
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img src="images/image-colton.jpg" alt="review photo" class="review__photo">
+                                    <div class="review__user-box">
+                                        <p class="review__username">Clinton davis</p>
+                                        <p class="review__user-date">Feb. 23. 2023</p>
+                                    </div>
+                                    <div class="review__rating">6.4</div>
+                                </figcaption>
+                            </figure>
+                            <figure class="review">
+                                <blockquote class="review__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate at beatae,
+                                    repellat fugit odit unde id ducimus exercitationem dignissimos facere.
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img src="images/image-kira.jpg" alt="review photo" class="review__photo">
+                                    <div class="review__user-box">
+                                        <p class="review__username">Kira Norman</p>
+                                        <p class="review__user-date">May. 5. 2022</p>
+                                    </div>
+                                    <div class="review__rating">8.7</div>
+                                </figcaption>
+                            </figure>
+                            <button class="btn-inline">Show more <span>&rarr;</span></button>
+                        </div>
+                    </div>
+                    <div class="last">
+                        <h2 class="last__buy">
+                            3 Apartments left, Get yours now!
+                        </h2>
+                        <button class="btn">
+                            <span class="btn__visible">Buy now!</span>
+                            <span class="btn__invisible">Only 3 Apartments left</span>
+                        </button>
+                    </div>
+
+            </div>
+            </main>
+        </div>
+        </div>
+    </body>
+
+</html>
